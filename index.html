@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -363,7 +364,10 @@
                     } else {
                         throw new Error('Network response was not ok.');
                     }
-                })             
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was an error submitting your form. Please try again.');
                 });
         });
     </script>
