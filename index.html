@@ -139,30 +139,35 @@
             <input type="text" name="cro_purpose_specify" class="specify-input hidden" placeholder="Please specify">
 
             <label>6. Primary Activity at CRO</label>
-            <select name="primary_activity" required>
-                <option value="" disabled selected>Select an activity</option>
-                <option value="Sevadarshan Queue">Sevadarshan Queue</option>
-                <option value="Current Booking – Daily Ticketed Entries">Current Booking – Daily Ticketed Entries</option>
-                <option value="Seva Dip Allocations">Seva Dip Allocations</option>
-                <option value="Advance Booking (pre-booked darshan)">Advance Booking (pre-booked darshan)</option>
-                <option value="Current Booking – Walk-in">Current Booking – Walk-in</option>
-                <option value="VIP/VVIP & Special Accommodations / Arjitha Seva">VIP/VVIP & Special Accommodations / Arjitha Seva</option>
-                <option value="Donor Scheme Accommodation">Donor Scheme Accommodation</option>
-                <option value="Floating Crowd (waiting without confirmed booking)">Floating Crowd (waiting without confirmed booking)</option>
-                <option value="Temporary Waiting Area East of CRO">Temporary Waiting Area East of CRO</option>
-                <option value="Waiting Area (formal CRO waiting halls)">Waiting Area (formal CRO waiting halls)</option>
-                <option value="Entry to CRO Administration Block">Entry to CRO Administration Block</option>
-                <option value="Annaprasadam (free meal service)">Annaprasadam (free meal service)</option>
-                <option value="Food Stalls (paid food counters/vendors)">Food Stalls (paid food counters/vendors)</option>
-                <option value="Toilets (public sanitation facilities)">Toilets (public sanitation facilities)</option>
-                <option value="ATM (cash withdrawal)">ATM (cash withdrawal)</option>
-                <option value="Railway Reservation Counters">Railway Reservation Counters</option>
-                <option value="Panchayat Office Staff Movement">Panchayat Office Staff Movement</option>
-                <option value="Panchayat Office Visitors (civic issues)">Panchayat Office Visitors (civic issues)</option>
-                <option value="Scanning Machines (security check)">Scanning Machines (security check)</option>
-                <option value="Other">Other</option>
-                <input type="text" name="primary_activity_specify" class="specify-input hidden" placeholder="Please specify">
-            </select>
+                <select name="primary_activity" required>
+                    <option value="">Select an activity</option>
+                    <optgroup label="Darshan & Seva Related">
+                        <option value="sevadarshan_queue">Sevadarshan Queue</option>
+                        <option value="current_booking_daily">Current Booking – Daily Ticketed Entries</option>
+                        <option value="seva_dip_allocations">Seva Dip Allocations</option>
+                        <option value="advance_booking">Advance Booking (pre-booked darshan)</option>
+                        <option value="current_booking_walkin">Current Booking – Walk-in</option>
+                        <option value="vip_special_access">VIP/VVIP & Special Accommodations / Arjitha Seva</option>
+                    </optgroup>
+                    <optgroup label="Accommodation Related">
+                        <option value="donor_scheme_accommodation">Donor Scheme Accommodation</option>
+                        <option value="floating_crowd">Floating Crowd (waiting without confirmed booking)</option>
+                        <option value="temporary_waiting_east">Temporary Waiting Area East of CRO</option>
+                        <option value="formal_waiting_area">Waiting Area (formal CRO waiting halls)</option>
+                        <option value="cro_admin_entry">Entry to CRO Administration Block</option>
+                    </optgroup>
+                    <optgroup label="Food and Utility Services">
+                        <option value="annaprasadam">Annaprasadam (free meal service)</option>
+                        <option value="food_stalls">Food Stalls (paid food counters/vendors)</option>
+                        <option value="toilets">Toilets (public sanitation facilities)</option>
+                        <option value="atm">ATM (cash withdrawal)</option>
+                        <option value="railway_reservation">Railway Reservation Counters</option>
+                    </optgroup>
+                    <optgroup label="Local Governance and Administration">
+                        <option value="panchayat_staff_movement">Panchayat Office Staff Movement</option>
+                        <option value="panchayat_visitors">Panchayat Office Visitors (civic issues)</option>
+                        <option value="scanning_machines">Scanning Machines (security check)</option>
+                    </optgrou
 
             <label>7a. Arrival Time at CRO</label>
             <input type="time" name="arrival_time" required>
